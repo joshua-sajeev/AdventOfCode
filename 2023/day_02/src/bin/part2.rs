@@ -9,7 +9,6 @@ fn main() {
     lines.remove(lines.len()-1);
     let mut total = 0;
     for i in 0..lines.len(){
-        println!("{}",lines[i]);
         let line: Vec<_> = lines[i].split(';').collect();
         let mut mb_v = 0;
         let mut mg_v = 0;
@@ -48,7 +47,6 @@ fn main() {
             }
         }
         sum = sum + (mb_v * mr_v * mg_v);
-        println!("{sum}");
         total = total + sum;
     }
     println!("{total}");
